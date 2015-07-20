@@ -1,0 +1,128 @@
+image-00
+diffuse_point
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   256   0 0 0
+ltp   -3 3 2   1 1 1   0
+lta 0.1 0.1 0.1
+sph   0 0 0   0.65
+
+image-01
+diffuse_directional
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   256   0 0 0
+ltd   1 0 -1   1 1 1   0
+lta 0.1 0.1 0.1
+sph   0 0 0   0.65
+
+image-02
+specular_point
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   0 0 0  1 1 1   256   0 0 0
+ltp   1 0 1   1 1 1   0
+lta 0.1 0.1 0.1
+sph   0 0 0   0.65
+
+image-03
+specular_directional
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   0 0 0  1 1 1   256   0 0 0
+ltd   1 0 -1   1 1 1   0
+lta 0.1 0.1 0.1
+sph   0 0 0   0.65
+
+image-04
+shadow_point
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  1 1 1   256   0 0 0
+ltp   0.5 0.8 0.5   1 1 1   0
+lta 0.1 0.1 0.1
+sph   0 0 -2   1.5
+sph	  0.5 0.5 0 0.1
+
+image-05
+shadow_directional
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   64   0 0 0
+ltd   1 1 -1   1 1 1   0
+lta   0.1 0.1 0.1
+tri   2 2 -1  -2 -2 -1   2 -2 -1
+sph   0.2 -0.2 0.0   0.1
+
+image-06
+triangle_point
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   64   0 0 0
+ltp   1 1 1   1 1 1   0
+lta   0.1 0.1 0.1
+tri   2 2 -1  -2 -2 -1   2 -2 -1
+
+image-07
+triangle_point_back (opposite normal)
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   64   0 0 0
+ltp   1 1 1   1 1 1   0
+lta   0.1 0.1 0.1
+tri   2 2 -1  2 -2 -1   -2 -2 -1
+
+image-08
+translate
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   64   0 0 0
+ltd   -1 1 -1   1 1 1   0
+lta   0.1 0.1 0.1
+xft   -1 1 0
+sph   0 0 0   0.65
+
+image-09
+scale
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   64   0 0 0
+ltp   1 1 1   1 1 1   0
+lta   0.1 0.1 0.1
+xfs 2 0.5 1
+sph   0 0 0   0.65
+
+image-10
+rotate
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   64   0 0 0
+ltd   -1 1 -1   1 1 1   0
+lta   0.1 0.1 0.1
+xfr   0 45 0
+sph   0 0 0   0.65
+
+image-11
+combined transformation - scale, rotate, translate
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   1 1 1   1 1 1  0 0 0   64   0 0 0
+ltd   -0.5 0.5 -1   1 1 1   0
+lta   0.1 0.1 0.1
+xft 1 0 0
+xfr 90 0 0
+xfs 2 1 1
+sph   0 0 0   0.4
+
+image-12
+obj
+cam   0 0 2   -1 -1 1   1 -1 1   -1 1 1   1 1 1
+mat   0.1 0.1 0.1   0 1 0   0 1 0   64   0.8 0.8 0.8
+ltp   1 1 1   1 1 1   0
+obj simple_obj_1.obj
+
+v -1 0 0
+v 1 0 0
+v 0 1 0
+f 1 2 3
+
+image-13
+reflect
+cam 0 0 10 -5 -5 5 5 -5 5 -5 5 5 5 5 5 
+mat 0 0 0 1 1 0 .1 0 .1 3 0 0 0 
+xft -4 0 0 
+sph 0 0 0 3 
+mat 0 0 0 0 0 1 .1 0 .1 3 .5 .5 .5 
+xft 8 0 0 
+sph 0 0 -0 3 
+ltd 0 0 -1 1 1 1
+
+
